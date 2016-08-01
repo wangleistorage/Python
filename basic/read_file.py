@@ -17,3 +17,5 @@ txt = open(files)
 content = txt.read()
 
 print content
+
+txt.close()
