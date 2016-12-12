@@ -6,9 +6,9 @@ times = time.strftime('%Y%m%d')
 rds1 = ['xkeshi_com', 'xkeshi_shop_new', 'xkeshi_payment', 'xkeshi_sso', 'coupon_platform', 'xkeshi_market', 'wemall']
 rds2 = ['xkeshi_ecoupon', 'xkeshi_business', 'xkeshi_common']
 
-rds1_host = 'rr-bp1898262ltso96yi.mysql.rds.aliyuncs.com'
+rds1_host = 'rds1.mysql.rds.aliyuncs.com'
 rds1_port = 3306
-rds2_host = 'rdsy2v6qxk8sv6m6nwna.mysql.rds.aliyuncs.com'
+rds2_host = 'rds2.mysql.rds.aliyuncs.com'
 rds2_port = 3400
 rds_path = '/mnt/aliyunrds1bk/tracker/'
 rds_today_path = rds_path + times
