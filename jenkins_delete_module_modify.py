@@ -4,17 +4,17 @@
 import sys, os, shutil, re
 
 project = {
-           'http://gitlab.ops.xkeshi.so/backend-new-framework/xkeshi-business.git': (['common','openApi','servicebus','statistics','xkeshi-sync']),
-           'http://gitlab.ops.xkeshi.so/backend-openplatform/shopplatform.git': ['shopplatform'],
-           'http://gitlab.ops.xkeshi.so/backend-openplatform/integralmall.git': ['integralmall'],
-           'http://gitlab.ops.xkeshi.so/backend-openplatform/ele.git': ['takeaway'],
-           'http://gitlab.ops.xkeshi.so/backend-member-market/xkeshi-member.git': ['member'],
-           'http://gitlab.ops.xkeshi.so/framework/x-framework.git': ['xkeshi-framework'],
-           'http://gitlab.ops.xkeshi.so/backend-social/wemall.git': ['wemall'],
-           'http://gitlab.ops.xkeshi.so/framework/cas-4.1.10.git': ['cas'],
-           'http://gitlab.ops.xkeshi.so/backend-shop-item/shop.git': ['shop'],
-           'http://gitlab.ops.xkeshi.so/backend-payment/payment.git': ['payment'],
-           'http://gitlab.ops.xkeshi.so/backend-payment/ecoupon.git': ['ecoupon'],
+           'http://gitlab.ops.xxx.so/backend-new-framework/xkeshi-business.git': (['common','openApi','servicebus','statistics','xkeshi-sync']),
+           'http://gitlab.ops.xxx.so/backend-openplatform/shopplatform.git': ['shopplatform'],
+           'http://gitlab.ops.xxx.so/backend-openplatform/integralmall.git': ['integralmall'],
+           'http://gitlab.ops.xxx.so/backend-openplatform/ele.git': ['takeaway'],
+           'http://gitlab.ops.xxx.so/backend-member-market/xkeshi-member.git': ['member'],
+           'http://gitlab.ops.xxx.so/framework/x-framework.git': ['xkeshi-framework'],
+           'http://gitlab.ops.xxx.so/backend-social/wemall.git': ['wemall'],
+           'http://gitlab.ops.xxx.so/framework/cas-4.1.10.git': ['cas'],
+           'http://gitlab.ops.xxx.so/backend-shop-item/shop.git': ['shop'],
+           'http://gitlab.ops.xxx.so/backend-payment/payment.git': ['payment'],
+           'http://gitlab.ops.xxx.so/backend-payment/ecoupon.git': ['ecoupon'],
 }
 
 project_path = "/root/.m2/repository/com/xkeshi/"
