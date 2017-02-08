@@ -5,7 +5,7 @@ import MySQLdb
 mysql = {
          'host': 'localhost',
          'user': 'root',
-         'port': 3305,
+         'port': 3306,
          'sock': '/tmp/mysql.sock',
          'passwd': '3dq2w3y2',
          'db': 'xuesheng'
