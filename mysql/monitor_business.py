@@ -2,8 +2,8 @@
 
 import MySQLdb
 
-shopdbinfo={'host':'183.131.13.60','user':'root','port’:11111,’passwd’:’xxxxxxxxxx’,’db':'shop'}
-tradedbinfo={'host':'183.131.13.60','user':'root','port’:11111,’passwd':'xxxxxxxxxx','db':'trade'}
+shopdbinfo={'host':'x.x.x.x','user':'root','port’:11111,’passwd’:’xxxxxxxxxx’,’db':'shop'}
+tradedbinfo={'host':'x.x.x.x','user':'root','port’:11111,’passwd':'xxxxxxxxxx','db':'trade'}
 
 
 class do_db(object):
