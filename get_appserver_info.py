@@ -4,7 +4,7 @@ import argparse
 import MySQLdb
 
 def mysql_info(sql):
-    mysql = {'host':'192.168.184.140', 'user':'wanglei', 'port':3306, 'passwd': 'Q3aqNsHI', 'db':'wanglei'}
+    mysql = {'host':'0.0.0.0', 'user':'wanglei', 'port':3306, 'passwd': 'passwd', 'db':'wanglei'}
     conn = MySQLdb.connect(host=mysql['host'], user=mysql['user'], port=mysql['port'], passwd=mysql['passwd'], db=mysql['db'])
     cursor = conn.cursor()
     cursor.execute(sql)
