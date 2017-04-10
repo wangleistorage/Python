@@ -15,9 +15,9 @@ def get_delete_day(day_num):
 def arch_delete_by_query():
     day_num = int(sys.argv[2])
     times = str(get_delete_day(day_num)) + 'T' + time.strftime('%H:%M:%S') + '+' + '08:00'
-    es_logs = ['xkeshi_log-accesslog', 'xkeshi_log-errorlog']
-    es_user = "es_admin1:tz9aAD9L"
-    es_addr = "101.37.38.127:9200"
+    es_logs = ['elasticsearch_log-accesslog', 'elasticsearch_log-errorlog']
+    es_user = "user:pass"
+    es_addr = "0.0.0.0:9200"
     data ='{"query": {"range": {"createTime":{"from": null,"to": "%s"}}}}' % times
     for index_name in es_logs:
         cmd="curl --user %s -XDELETE '%s/%s/_query?pretty' -H 'Content-Type: application/json' -d '%s'" % (es_user, es_addr, index_name, data)
@@ -26,9 +26,9 @@ def arch_delete_by_query():
 def arch_delete_index():
     day_num = int(sys.argv[2])
     times = str(get_delete_day(day_num))
-    es_logs = ['xkeshi_log-']
-    es_addr = 'http://101.37.38.127:9200/'
-    es_user = "es_admin1:tz9aAD9L"
+    es_logs = ['elasitcsearch_log-']
+    es_addr = 'http://0.0.0.0:9200/'
+    es_user = "user:pass"
     for log in es_logs:
         delete_url = es_addr + log + str(times)
         cmd = "curl -u %s -XDELETE %s" % (es_user, delete_url)
@@ -37,9 +37,9 @@ def arch_delete_index():
 def data_delete_index():
     day_num = int(sys.argv[2])
     times = str(get_delete_day(day_num))
-    es_logs = ['xkeshi_log_', 'xkeshi_nginx_log_']
-    es_addr = 'http://120.55.99.43:9200/'
-    es_user = "xkeshi_admin3:FQxZWKm2"
+    es_logs = ['elasticsearch_log_', 'elasticsearch_nginx_log_']
+    es_addr = 'http://0.0.0.0:9200/'
+    es_user = "user:pass"
     for log in es_logs:
         delete_url = es_addr + log + str(times)
         cmd = "curl -u %s -XDELETE %s" % (es_user, delete_url)
