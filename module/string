@@ -1,0 +1,17 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
+
+import string
+
+print string.digits
+
+print string.lowercase
+
+print string.uppercase
+
+print string.hexdigits
+print string.octdigits
+print string.letters
+#print string.printable
+#print string.punctuation
+#print string.whitespace
